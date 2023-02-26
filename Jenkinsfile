@@ -1,7 +1,7 @@
 abcs = ['curl -s -o /dev/null -w "%{http_code}" http://admin01:7001/console', 'curl -s -o /dev/null -w "%{http_code}" http://admin01:7001/console', 'curl -s -o /dev/null -w "%{http_code}" http://admin01:7001/console']
 
 pipeline{
-    agent { label 'linuxagent' }
+    agent any
             stages{
                     stage('Stop'){
                         steps{
